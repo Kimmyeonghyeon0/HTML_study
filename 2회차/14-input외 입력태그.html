@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>input외의 입력태그</title>
+    </head>
+    <body>
+        <h2>음료를 고르세요</h2>
+        <select>
+            <option>커피</option>
+            <option>콜라</option>
+            <option>쥬스</option>
+            <option>생수</option>
+        </select>
+
+        <fieldset>
+            <legend>음료주문</legend>
+        <hr>
+        <h2>음료를 고르세요</h2> <!--selected는 우선적으로 선택해 놓은것-->
+        <select multiple size="2">   <!--multiple은 여러가지 선택하게끔 해주는 기능-->
+                                     <!--size를 넣어주면 입력한 수 만큼 보이게해주는 코드-->
+            <option value="coffee">커피</option>
+            <option value="coke" selected>콜라</option>
+            <option value="juice">쥬스</option>
+            <option value="water">생수</option>
+        </select>
+        </fieldset>
+        <hr>
+        
+        <h2>기타 음료를 원한다면 자유롭게 써주세요</h2>
+        <textarea cols="10" rows="6"></textarea>    <!--cols는 가로 길이 조절가능-->
+                                                    <!--rows는 세로 길이 조절가능-->
+        
+        <hr>
+
+        <h2>우리의 준비 상태는 아래와 같습니다</h2>
+        <progress max="100" value="80"></progress>
+
+        <hr>
+
+        <h2>추가 용무가 있으면 호출해주세요</h2>
+        <!-- value 속성에 콘텐츠를 써 줍니다.-->
+         <input type="button" value="호출">
+
+         <!--태그 사이에 콘텐츠를 써 줍니다.-->
+         <button>호출</button>
+
+
+
+         <fieldset>
+            <legend>음료주문</legend>
+        <hr>
+        <h2>음료를 고르세요</h2> <!--selected는 우선적으로 선택해 놓은것-->
+        <select multiple size="2">   <!--multiple은 여러가지 선택하게끔 해주는 기능-->
+                                     <!--size를 넣어주면 입력한 수 만큼 보이게해주는 코드-->
+            <option value="coffee">커피</option>
+            <option value="coke" selected>콜라</option>
+            <option value="juice">쥬스</option>
+            <option value="water">생수</option>
+        </select>
+        </fieldset>
+
+    </body>
+</html>

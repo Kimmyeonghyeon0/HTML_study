@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    </header>
+    <hr>
+    <main>
+    <form>
+        
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="name">이름</label>
+            <input type="text"
+            name="name"
+             id="name" placeholder="본명을 입력하세요">
+            <br>
+            <label for="email">이메일</label>
+            <input type="email" id="name"
+            name="email"
+            placeholder="이메일 주소 쓰세요">
+        </fieldset>
+        <fieldset>
+            <legend>설문</legend>
+            
+            <p>입문에 적절한 cc를 골라주세요</p>
+            <input type="radio" id="entry" name="age">
+            <label for="entry">125cc</label>
+            <input type="radio" id="quarter" name="age">
+            <label for="quarter">300cc</label>
+            <input type="radio" id="middle" name="age">
+            <label for="middle">600cc</label>
+            <input type="radio" id="liter" name="age">
+            <label for="liter">1000cc</label>
+            <input type="radio" id="over" name="age">
+            <label for="over">OVERLITER </label>
+
+            <p>선호하는 오토바이 장르를 골라주세요</p>
+            <input type="radio" id="sports" name="age">
+            <label for="sports">스포츠</label>
+            <input type="radio" id="Naked" name="age">
+            <label for="Naked">네이키드</label>
+            <input type="radio" id="tourer" name="age">
+            <label for="tourer">투어러</label>
+            <input type="radio" id="Multipurpose" name="age">
+            <label for="Multipurpose">멀티퍼포즈</label>
+            <input type="radio" id="off road" name="age">
+            <label for="off road">오프로드</label>
+            <input type="radio" id="other" name="age">
+            <label for="other">그 외</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>기타 의견</legend>
+            <textarea rows="3" cols="30" name="comment"></textarea>
+
+        </fieldset>
+
+        <input type="submit">
+    </form>
+    </main>
+    <hr>
+    <footer>
+    <p>입력하시느라 수고하셨습니다.</p>
+    </footer>
+
+</body>
+</html>

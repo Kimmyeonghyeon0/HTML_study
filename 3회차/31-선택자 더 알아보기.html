@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /*
+        기호와 함께 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+        */
+        img[alt]{
+            border: 5px dashed red;
+        }
+        /* or */
+        [width *= "2"]{
+            border: 5px dashed red;
+        }
+
+        body p{
+            color: brown;
+        }
+
+
+        /*
+        형제 선택자는 뒤이어 동작하는 형제들을 대상으로 한다!
+        */
+
+        #sam + p{
+            color: aqua;
+        }
+        
+        #sam ~ p{
+            color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/궁동.jpeg" width="120" alt="궁동">
+    <img src="images/궁동.jpeg" width="120">
+    <img src="images/궁동.jpeg" width="120" id="sam">
+    <p>대전의 안에 있는 4개의 구중 한곳에있는 유성구 이다.</p>
+    <p>유성구 안에 있는 궁동으로 카이스트와 충남대학교가 양 옆으로 있다.</p>
+    <p>양쪽으로 대학교가 있어서 <em>외국인</em>들도 많이 거주하고 있는 동네중 하나이다.</p>
+    <p>대학가여서 월세가 싸다</p>
+</body>
+</html>

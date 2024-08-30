@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사요소와 의사클래스</title>
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .menu{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: azure;
+            background-color: gray;
+        }
+
+        a:active{
+            color: azure;
+            background-color: black;
+        }
+
+        li:nth-child(n){
+            font-size: 20px;
+        }
+
+        a::first-letter{
+            color: white;
+        }
+
+        a::after{
+            content: "보기";
+            color: brown;
+        }
+            /* after, before은 위 코드 작성과 같다
+            다만"보기"가 앞으로 가냐 뒤로 가냐의 차이이다 */
+
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+    </ul>
+</body>
+</html>

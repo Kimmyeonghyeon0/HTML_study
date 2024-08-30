@@ -1,0 +1,30 @@
+
+*{
+    text-align: center;
+
+}
+
+html{
+    background-color: rgba(142, 178, 244, 0.214);
+    font-size: 16px;
+}
+
+body{
+
+    width: 640px;
+    margin: auto; /* 너비에서 남음 여백을 동일하게 분배 */
+}
+
+h1{
+    font-size: 89px;
+}
+
+img{
+    width: 500px;
+    height: 350px;
+    border-radius: 400px;
+}
+
+p{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 효과</title>
+    <style>
+        .eyes{
+            width: 640px;
+            margin: auto;
+        }
+        .eye{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: relative;
+        }
+
+        .eye:nth-child(1){ float: left;}
+        .eye:nth-child(2){ float: right;}
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+            position: absolute;
+            top: 80px;
+            left: 30px;
+
+            animation-name: moving;
+            animation-duration: 3s; /*해당 지점까지 얼마나 걸리는 가*/
+            animation-delay: 0s;
+            animation-timing-function: linear;  /*속도*/
+            animation-iteration-count: infinite; /* 반복하는 */
+            animation-direction: alternate; /*정방향 역방향을 정할 수있다*/
+            /*단축 속성으로도 사용이가능하다 name부터 delay까지의 순서만 지키고 
+            나머지 뒤 부분은 순서 상관없다*/
+
+
+            animation-play-state: paused; /*멈추고 동작할 수 있는*/ /*hover를 사용하면 다른기능도 구현가능*/
+        }
+
+        @keyframes moving {
+            from{ left: 30px;}
+            to{ left: 120px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="eyes">
+        <div class="eye">
+            <div class="ball"></div>
+        </div>
+        <div class="eye">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        div.box{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+        }
+
+        /*위 조건이 맞을때 아래의 콘텐츠가 추가가된 것이다*/
+        /*화면에서 사용하는 래더링 조건*/
+        @media screen and (max-width: 800px){
+            div.box{
+                background-color: orange;
+            }
+        }
+        /*여러가지 추가 가능(기기별로)*/
+        @media screen and (max-width: 1000px){
+            div.box{
+                background-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
